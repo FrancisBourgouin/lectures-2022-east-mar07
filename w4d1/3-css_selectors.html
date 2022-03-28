@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      h1 {
+        font-family: sans-serif;
+      }
+      /* header h1 { */
+      header > h1 {
+        color: orange;
+        color: rgb(200, 100, 0);
+        color: #f0c000;
+        color: #ffffff;
+        color: rgb(179, 44, 44);
+      }
+      main section article {
+        /* color: yellow; */
+      }
+      main section article.first {
+        color: green;
+      }
+      article.first h1 {
+        text-decoration: underline;
+      }
+      article h1 {
+        text-decoration: overline;
+      }
+
+      /* article.first h1
+      article.first a
+      article.first p */
+
+      #post-id-1282811 {
+      }
+
+      article:hover {
+        background-color: #f0c000;
+      }
+
+      section article:first-of-type {
+        background-color: aquamarine;
+      }
+
+      ul li:nth-of-type(n + 4) {
+        background: lightgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>112 => 1 x 10^2 + 1 x 10^1 + 2 x 10^0 => 112 (0123456789)</p>
+      <p>112 => 1 x 8^2 + 1 x 8^1 + 2 x 8^0 => 74 (01234567)</p>
+      <p>FF => 15 x 16^1 + 15 x 16^0 => 255 (0123456789ABCDEF)</p>
+      <h1>Super page of destiny! 🔥🔥🔥</h1>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>FAQ</li>
+        <li>FAQ</li>
+        <li>FAQ</li>
+        <li>FAQ</li>
+      </ul>
+    </header>
+    <main>
+      <h1>Posts</h1>
+      <p>
+        Post description Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Distinctio, laboriosam, tempora placeat provident cupiditate perspiciatis commodi
+        aperiam, impedit dolore obcaecati minima explicabo natus! Vero similique eaque
+        sapiente dolores cum nobis.
+      </p>
+      <section>
+        <article class="first">
+          <h1 class="first-title">Post title</h1>
+          <p class="first-paragraph">
+            Post content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+            id, optio vitae maxime beatae ab, mollitia dignissimos odio, incidunt fuga
+            nemo quae! Non hic consectetur mollitia sint velit debitis eveniet.
+          </p>
+          <a href="#" class="first-link">Super cool link</a>
+        </article>
+        <article class="promo" id="post-id-1282811">
+          <h1>Post title</h1>
+          <p>
+            Post content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+            id, optio vitae maxime beatae ab, mollitia dignissimos odio, incidunt fuga
+            nemo quae! Non hic consectetur mollitia sint velit debitis eveniet.
+          </p>
+          <a href="#">Super cool link</a>
+        </article>
+        <article>
+          <h1>Post title</h1>
+          <p>
+            Post content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+            id, optio vitae maxime beatae ab, mollitia dignissimos odio, incidunt fuga
+            nemo quae! Non hic consectetur mollitia sint velit debitis eveniet.
+          </p>
+          <a href="#">Super cool link</a>
+        </article>
+        <article class="promo">
+          <h1>Post title</h1>
+          <p>
+            Post content Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+            id, optio vitae maxime beatae ab, mollitia dignissimos odio, incidunt fuga
+            nemo quae! Non hic consectetur mollitia sint velit debitis eveniet.
+          </p>
+          <a href="#">Super cool link</a>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
