@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import useNumbers from "./useNumbers";
 
 const SomeComponent = (props) => {
   return (
@@ -10,9 +11,8 @@ const SomeComponent = (props) => {
 };
 
 function App() {
-  const [state, setState] = useState(0);
+  const [number, randomChange, add, substract] = useNumbers(0);
 
-  const randomChange = () => setState(Math.random());
   return (
     <div className="App">
       <SomeComponent change={randomChange} />
